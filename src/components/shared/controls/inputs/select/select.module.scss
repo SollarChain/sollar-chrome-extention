@@ -1,0 +1,70 @@
+@import "../../../../../global-styles/variables";
+
+.wrapper {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  background-color: $field-back;
+  gap: 12px;
+  border-radius: 12px;
+}
+
+.text {
+  min-width: 186px;
+  flex: 1 1 auto;
+}
+
+.tick {
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease .3s;
+  width: 20px;
+  height: 20px;
+
+  path {
+    transition: all ease .3s;
+    stroke: $primary-text;
+  }
+}
+
+.tick.active {
+  transform: rotate(-180deg);
+
+  path {
+    stroke: $primary-back;
+  }
+}
+
+.options {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  top: 48px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.option {
+  background-color: $field-back;
+  padding: 14px 16px;
+  transition: all ease .3s;
+
+  &:hover {
+    color: rgba($primary-text, .8);
+  }
+
+  &:active {
+    color: rgba($primary-text, .92);
+  }
+}
+
+.selected {
+  color: $primary-back;
+}

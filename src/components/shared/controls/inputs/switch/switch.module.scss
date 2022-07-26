@@ -1,0 +1,40 @@
+@import "src/global-styles/variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.track {
+  width: 28px;
+  height: 16px;
+  border-radius: 20px;
+  position: relative;
+  transition: all ease .25s;
+  background-color: $secondary-border;
+}
+
+.thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: all ease .25s;
+  background-color: $white;
+}
+
+
+.active {
+  .track {
+    background-color: $checkbox-active;
+  }
+
+  .thumb {
+    transform: translateX(12px);
+  }
+}
+

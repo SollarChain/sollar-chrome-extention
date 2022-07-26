@@ -1,0 +1,71 @@
+@import "../../../../../global-styles/variables";
+@import "../../../../../global-styles/mixins";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.boxContainer {
+  min-width: 28px;
+  min-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  transition: all .3s ease;
+  width: 24px;
+  height: 24px;
+}
+
+.box.unchecked:not(.disabled) {
+  background-color: transparent;
+  border: 2px solid $secondary-border;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: rgba($blue, .6);
+  }
+
+  &:active {
+    border-color: rgba($blue, .9);
+  }
+}
+
+.box.checked:not(.disabled) {
+  width: 28px;
+  height: 28px;
+  background-color: $blue;
+  border: 2px solid $blue;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: rgba($blue, .6);
+    border-color: rgba($blue, .6);
+  }
+
+  &:active {
+    background-color: rgba($blue, .9);
+    border-color: rgba($blue, .9);
+  }
+}
+
+.disabled {
+  border-radius: 4px;
+  border: 2px solid $disabled-back;
+  background-color: rgba($disabled-back, .5) !important;
+}
+
+.disabled.checked {
+  background-color: transparent;
+  @include color-svg($disabled-back);
+}
+

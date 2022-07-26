@@ -1,0 +1,59 @@
+@import "src/global-styles/variables";
+
+.tabs {
+  padding: 0 32px;
+  cursor: pointer;
+  display: flex;
+  gap: 27px;
+}
+
+.tab {
+  padding: 20px 0;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $secondary-text;
+}
+
+.tab.active {
+  color: $primary-text;
+}
+
+.smallTab {
+  padding: 11px 0;
+}
+
+.selectedTabUnderline {
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: $primary-text;
+}
+
+.isHomePage.tabs {
+  padding: 0;
+  //border-bottom: 1px solid #D7D7D7;
+}
+
+.isHomePage {
+
+  .tab {
+    padding: 12px 0;
+    text-align: center;
+    flex-grow: 1;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: $home-page-primary-text;
+  }
+
+  .selectedTabUnderline {
+    border-radius: 2px;
+    background-color: $blue;
+  }
+}

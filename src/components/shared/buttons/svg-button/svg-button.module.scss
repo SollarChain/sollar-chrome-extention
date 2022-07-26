@@ -1,0 +1,40 @@
+@import "../../../../global-styles/mixins";
+@import "../../../../global-styles/variables";
+
+.button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  path {
+    transition: all ease .3s
+  }
+
+  @include color-svg($white);
+
+  &:hover {
+    @include color-svg(rgba($secondary-border, .9));
+  }
+
+  &:active {
+    @include color-svg(rgba($secondary-border, .7));
+  }
+}
+
+.button.onWhite {
+  @include color-svg($primary-text);
+
+  &:hover {
+    @include color-svg(rgba($primary-text, .9));
+  }
+
+  &:active {
+    @include color-svg(rgba($primary-text, .7));
+  }
+}
+
+.disabled {
+  @include color-svg(rgba($white, .3));
+}

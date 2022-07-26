@@ -1,0 +1,27 @@
+.container {
+  min-width: 340px;
+}
+.logo {
+  margin: 40px auto 0;
+  display: block;
+  width: 124px;
+  height: 124px;
+}
+
+.heading {
+  margin-top: 57px;
+  text-align: center;
+}
+
+.description {
+  margin-top: 11px;
+  padding: 0 48px;
+}
+
+.buttons {
+  padding-bottom: 30px;
+  margin-top: 143px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}

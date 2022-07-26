@@ -1,0 +1,72 @@
+@import "../../../../../global-styles/variables";
+@import "../../../../../global-styles/mixins";
+
+.list {
+  border-top: 1px solid $tab-border;
+  min-height: 240px;
+}
+
+.item {
+  @include list-item;
+  display: grid;
+  grid-template: "img title income" auto
+                 "img status usdPrice " auto
+                 / 32px 1fr auto;
+  row-gap: 20px;
+  column-gap: 8px;
+  border-bottom: 1px solid $tab-border;
+}
+
+.img {
+  grid-area: img;
+  width: 30px;
+  height: 30px;
+  justify-self: center;
+  align-self: center;
+}
+
+.title {
+  margin-left: 8px;
+  margin-top: 5px;
+  grid-area: title;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.status {
+  grid-area: status;
+  margin-left: 8px;
+  justify-self: start;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  border-radius: 2px;
+  color: $white;
+  background-color: $green;
+}
+
+.incoming {
+  grid-area: income;
+  color: red;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.income {
+  grid-area: income;
+  color: green;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.usdPrice {
+  grid-area: usdPrice;
+  justify-self: end;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $secondary-text;
+}

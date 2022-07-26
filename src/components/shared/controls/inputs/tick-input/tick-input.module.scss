@@ -1,0 +1,31 @@
+@import "src/global-styles/variables";
+
+.wrapper {
+  display: flex;
+  position: relative;
+  height: 48px;
+}
+
+.input {
+  padding: 13px 16px 13px 44px;
+  flex-grow: 1;
+  background-color: $field-back;
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $primary-text;
+    outline: none;
+  }
+
+}
+
+.icon {
+  position: absolute;
+  top: 15px;
+  left: 16.25px;
+}

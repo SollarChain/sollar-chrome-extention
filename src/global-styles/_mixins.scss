@@ -1,0 +1,40 @@
+@import "variables";
+
+@mixin color-svg($color) {
+  path:not([ignore-fill="true"]) {
+    fill: $color;
+  }
+  path:not([ignore-stroke="true"]) {
+    stroke: $color;
+  }
+}
+
+@mixin list-item() {
+  padding: 21px 32px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid $tab-border;
+}
+
+@mixin status-indicator($color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8px;
+  height: 8px;
+  box-sizing: content-box;
+  border: 2px solid #313131;
+  border-radius: 50%;
+  background-color: $white;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $color;
+  }
+}

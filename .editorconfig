@@ -1,0 +1,22 @@
+# Editor configuration, see https://editorconfig.org
+root = true
+
+[*]
+# end_of_line = crlf
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{ts, tsx}]
+ij_typescript_spaces_within_imports = true
+quote_type = single
+ij_typescript_spaces_within_object_literal_braces = true
+ij_typescript_force_semicolon_style = true
+ij_typescript_use_semicolon_after_statement = false
+
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false

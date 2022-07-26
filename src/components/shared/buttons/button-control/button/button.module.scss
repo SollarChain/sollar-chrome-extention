@@ -1,0 +1,105 @@
+@import "../../../../../global-styles/mixins";
+@import "../../../../../global-styles/variables";
+
+button.button, a.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  path {
+    transition: all .3s ease;
+  }
+
+  &:hover {
+    background-color: $home-page-primary-text;
+    color: $white;
+    @include color-svg($white);
+  }
+
+  &:active {
+    background-color: $home-page-primary-text;
+    color: $white;
+    @include color-svg($white);
+  }
+
+  &:disabled, &.disabled {
+    color: $home-page-primary-text;
+    @include color-svg($home-page-primary-text)
+  }
+}
+
+button.primary, a.primary {
+  color: $white;
+  background-color: $home-page-primary-text;
+
+  &:disabled, &.disabled {
+    background-color: $home-page-primary-text;
+  }
+}
+
+button.secondary, a.secondary {
+  color: $home-page-primary-text;
+  background-color: $white;
+  border: 1px solid $home-page-primary-text;
+
+  &:disabled, &.disabled {
+    background-color: $home-page-primary-text;
+  }
+}
+
+button.tertiary, a.tertiary {
+  background-color: transparent;
+  border: none;
+  color: $home-page-primary-text;
+
+  &:hover {
+    background-color: transparent;
+    border: none;
+    color: $home-page-primary-text;
+  }
+
+  &:active {
+    background-color: transparent;
+    border: none;
+    color: $home-page-primary-text;
+  }
+
+  &:disabled, &.disabled {
+    color: $home-page-primary-text;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.big {
+  min-width: 151px;
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+.medium {
+  min-width: 100px;
+  padding: 12px 32px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.small {
+  min-width: 115px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.left-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}

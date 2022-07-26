@@ -1,0 +1,93 @@
+@import "../../../../../global-styles/variables";
+@import "../../../../../global-styles/mixins";
+
+.list {
+  min-height: 240px;
+}
+
+.item {
+  @include list-item;
+  border-top: 1px solid $tab-border;
+  border-bottom: none;
+}
+.container{
+  display: flex;
+  writing-mode: vertical-lr;
+}
+.block{
+    background: white;
+    border-radius: 23px;
+    min-height: 170px;
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.inputContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons{
+  display: flex;
+  margin-right: 25px;
+  margin-left: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.input {
+  padding: 13px 18px 13px 22px;
+  flex-grow: 1;
+  background-color: $field-back;
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $primary-text;
+    outline: none;
+  }
+
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+}
+
+.add_btn{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.amount {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.amountPrice{
+  display: flex;
+  justify-content: end;
+  color: $primary-text;
+  font-size: 16px;
+  line-height: 16px;
+}
+.priceBlock{
+  width: 100%;
+  text-align: right;
+}

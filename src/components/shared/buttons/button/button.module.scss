@@ -1,0 +1,99 @@
+@import "../../../../global-styles/mixins";
+@import "../../../../global-styles/variables";
+
+button.button, a.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11.5px 22px;
+  min-width: 155px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  transition: all .3s ease;
+  border: none;
+  outline: none;
+
+  path {
+    transition: all .3s ease;
+  }
+}
+
+button.primary, a.primary {
+  color: $white;
+  background-color: $primary-text;
+
+  &:hover {
+    background-color: rgba($primary-text, .8);
+  }
+
+  &:active {
+    background-color: rgba($primary-text, .92);
+  }
+
+  &:disabled, &.disabled {
+    background-color: $disabled-back;
+  }
+}
+
+button.secondary, a.secondary {
+  color: $primary-back;
+  background-color: $white;
+  border: 1px solid $secondary-border;
+
+  &:hover {
+    background-color: rgba($secondary-border, .8);
+  }
+
+  &:active {
+    background-color: rgba($primary-text, .4);
+  }
+
+  &:disabled, &.disabled {
+    background-color: $disabled-back;
+  }
+}
+
+.login-tertiary {
+  color: $blue;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+
+  &:hover {
+    color: rgba($blue, .7);
+  }
+
+  &:active {
+    color: rgba($blue, .9);
+  }
+
+  &:disabled, &.disabled {
+    background-color: $disabled-back;
+  }
+}
+
+.login-primary {
+  color: $white;
+  background-color: $blue;
+  border: none;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: rgba($blue, .7);
+  }
+
+  &:active {
+    background-color: rgba($blue, .9);
+  }
+
+  &:disabled, &.disabled {
+    background-color: $disabled-back;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}

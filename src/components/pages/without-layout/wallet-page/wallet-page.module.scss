@@ -1,0 +1,204 @@
+@import "../../../../global-styles/variables";
+
+.caption {
+  padding: 21px 34px 35px;
+  background-color: $primary-back;
+  color: $white;
+}
+.closeDeposit{
+  cursor: pointer;
+  margin-left: 90%;
+}
+.containerPassword{
+  z-index: 2;
+}
+.siteConnect{
+  padding-top: 27px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.inputPassword{
+  padding: 13px 18px 13px 22px;
+  flex-grow: 1;
+  background-color: $field-back;
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $primary-text;
+    outline: none;
+  }
+}
+.connectingIndicator{
+  margin-left: 25px;
+  color: green;
+}
+.inputContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.titlePassword{
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.connectIndicator{
+  cursor: pointer;
+  margin-left: 25px;
+  color: orange;
+}
+.connectRedIndicator{
+  cursor: pointer;
+  margin-left: 25px;
+  color: red;
+}
+.connectIndicator:hover{
+  color: rgb(192, 187, 187);
+}
+.title{
+  font-size: 16px;
+}
+.titleHelper{
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.description{
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+.blockDeposit{
+  background: white;
+  border-radius: 23px;
+  min-width: 395px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blockTransfer{
+  background: white;
+  border-radius: 23px;
+  height: 320px;
+  width: 405px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 25px;
+}
+.btn_send{
+  margin-top: 35px;
+}
+.menuToken{
+  margin-top: 19px;
+  margin-right: 51px;
+  float: right;
+}
+.menuToken:hover{
+  color: rgb(176, 177, 177);
+  cursor: pointer;
+}
+
+.Address{
+  font-weight: bold;
+}
+
+.usdBalance {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 32px;
+}
+
+.input {
+  margin-left: 32px;
+  padding: 13px 18px 13px 22px;
+  flex-grow: 1;
+  background-color: $field-back;
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $primary-text;
+    outline: none;
+  }
+
+}
+.ethBalance {
+  margin-top: 10px;
+  opacity: .8;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.toBlock{
+  display: flex;
+  align-items: center;
+}
+.buttons {
+  margin-top: 4px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+}
+.buttonsWallet{
+  margin-top: 14px;
+  margin-bottom: 24px;
+  display: flex;
+  position: static;
+  justify-content: center;
+  gap: 19px;
+}
+.toTitle{
+  margin-right: 35px;
+}
+.placeholder {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.heading {
+  margin-top: 114px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.description {
+  padding: 0 30px;
+  line-height: 20px;
+}
+.selector{
+  width: 360px;
+  margin-top: 32px;
+}
+.mainContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.copyButton{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.buttonCopyContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

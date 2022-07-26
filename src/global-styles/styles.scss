@@ -1,0 +1,92 @@
+@import "variables";
+@import "reset";
+@import "fonts";
+@import "layout";
+@import "scroll";
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $description-text;
+}
+
+.smallDescription {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: $description-text;
+}
+
+.bold {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $primary-text;
+}
+
+a {
+  transition: all ease .3s;
+  color: $primary-back;
+
+  //&:hover {
+  //  color: $primary-hover-back;
+  //}
+  //
+  //&:active {
+  //  color: $primary-active-back;
+  //}
+}
+
+button.vanished {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.reverse {
+  transform: rotate(180deg);
+}
+
+hr {
+  margin: 24px 0;
+  height: 0;
+  border: 1px solid $tab-border;
+}
+
+input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+input::placeholder {
+  color: $secondary-text;
+  opacity: 0.5;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+}

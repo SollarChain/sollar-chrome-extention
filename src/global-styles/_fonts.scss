@@ -1,0 +1,13 @@
+@import "variables";
+
+@font-face {
+  font-family: "SF UI Text";
+  src: url("../assets/fonts/SFUIDisplay-Regular.woff2") format("woff2"),
+  url("../assets/fonts/SFUIDisplay-Medium.woff2") format("woff2");
+}
+
+body {
+  font-family: "SF UI Text", sans-serif;
+  font-weight: 400;
+  color: $primary-text
+}

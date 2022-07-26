@@ -1,0 +1,71 @@
+@import "/src/global-styles/variables";
+.container {
+  min-width: 320px;
+}
+
+.logo {
+  margin: 40px auto 0;
+  display: block;
+  width: 124px;
+  height: 124px;
+}
+
+.heading {
+  margin-top: 57px;
+  text-align: center;
+}
+
+.description {
+  margin-top: 11px;
+  padding: 0 48px;
+}
+
+.buttons {
+  padding-bottom: 30px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.input_header{
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  margin-top: 60px;
+  text-align: center;
+  padding: 13px 18px 13px 22px;
+  background-color: $field-back;
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $primary-text;
+    outline: none;
+  }
+}
+.restoreButton{
+  display: flex;
+  cursor: pointer;
+  font-size: 13px;
+  color: rgb(112, 108, 108);
+  justify-content: center;
+  align-items: center;
+}
+.restoreButton:hover{
+  color: rgb(161, 157, 157);;
+}
+
+
+.loginButton{
+  display: flex;
+  align-self: center;
+  width: 100px;
+}

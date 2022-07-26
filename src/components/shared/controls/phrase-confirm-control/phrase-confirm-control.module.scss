@@ -1,0 +1,75 @@
+@import "../../../../global-styles/variables";
+
+.wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.word {
+  min-width: 112px;
+  padding: 12px;
+  user-select: auto;
+  position: relative;
+}
+
+.word.active {
+  background-color: $home-page-primary-text;
+  border-color: $home-page-primary-text;
+  color: $white;
+}
+
+
+.wordSpirit {
+  pointer-events: none;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: $white;
+  color: $home-page-primary-text;
+  border: 1px solid $home-page-primary-text;
+}
+
+.selectedWords {
+  min-height: 271px;
+  width: 405px;
+  padding-left: 16px;
+  margin-left: -46px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 112px);
+  grid-template-rows: repeat(auto-fit, 44px);
+  row-gap: 17px;
+  column-gap: 17px;
+  border: 1px solid $home-page-primary-text;
+  border-radius: 8px;
+
+  .word {
+    flex: 0 1 112px;
+    height: 47px;
+    color: $home-page-primary-text;
+    border-color: $home-page-primary-text;
+  }
+}
+
+.unselectedWords {
+  margin-top: 27px;
+  margin-left: -25px;
+  margin-right: -25px;
+  max-width: 516px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(103px, 1fr));
+  row-gap: 8px;
+  column-gap: 12px;
+}
+
+@media (max-width: 446px) {
+  .selectedWords {
+    justify-content: center
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../../../../global-styles/variables";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  min-width: 24px;
+}
+
+.field {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: $field-back;
+
+  input {
+    flex: 1 1 auto;
+    align-self: stretch;
+    padding: 12px 46px 12px 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+.field.withLabel {
+  margin-left: 8px;
+}
+
+.eye {
+  position: absolute;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,38 @@
+@import '../../../../global-styles/variables';
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.input {
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    flex-grow: 1;
+    background-color: $field-back;
+    border-radius: 12px;
+    border: 1px solid transparent;
+  
+    &:focus-visible {
+      outline: none;
+    }
+  
+    &:focus {
+      border-color: $primary-text;
+      outline: none;
+    }
+}
+.input::placeholder{
+    text-align: center;
+    color: black;
+}

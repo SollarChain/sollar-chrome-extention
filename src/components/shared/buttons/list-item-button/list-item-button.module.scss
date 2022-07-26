@@ -1,0 +1,17 @@
+@import "src/global-styles/variables";
+@import "src/global-styles/mixins";
+
+.icon {
+  width: 32px;
+  height: 15px;
+}
+
+.item {
+  @include list-item;
+}
+
+.bigText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}

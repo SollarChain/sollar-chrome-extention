@@ -1,0 +1,18 @@
+@import "src/global-styles/variables";
+
+.modal {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: 24px 0;
+  background-color: $white;
+  border-radius: 12px;
+}
+
+.closeButton {
+  width: 24px;
+  height: 24px;
+}

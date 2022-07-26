@@ -1,0 +1,33 @@
+@import "src/global-styles/variables";
+
+.wrapper {
+  display: flex;
+  position: relative;
+  height: 48px;
+}
+
+.input {
+  padding: 13px 51px 13px 16px;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: $field-back;
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $primary-text;
+    outline: none;
+  }
+
+}
+
+.currency {
+  position: absolute;
+  top: 15px;
+  right: 16.25px;
+}

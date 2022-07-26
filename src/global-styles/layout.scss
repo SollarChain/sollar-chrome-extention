@@ -1,0 +1,26 @@
+.container {
+  max-width: 312px;
+  box-sizing: content-box;
+  padding: 12px;
+  margin: 0 auto;
+}
+
+.page {
+  min-height: calc(100vh - 82px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons {
+  padding: 16px 27px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}
+
+//.smallContainer {
+//  @extend .container;
+//  max-width: 526px;
+//}
+

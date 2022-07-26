@@ -1,0 +1,134 @@
+@import "src/global-styles/variables";
+
+.wrapper {
+  position: relative;
+  height: 88px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9D9D9D;
+}
+
+.range {
+  outline: none;
+  border: none;
+  margin: 43px auto 0;
+  display: block;
+  width: 248px;
+  max-width: 100%;
+  transition: box-shadow 0.2s ease-in-out;
+  -webkit-appearance: none;
+  background-color: $secondary-text;
+
+  &::-webkit-slider-runnable-track {
+    background-color: #9D9D9D;
+    height: 2px;
+    -webkit-appearance: none;
+    color: #313131;
+    border: none;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  &::-webkit-slider-thumb {
+    background-color: $primary-text;
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    margin-top: -10px;
+    box-shadow: inset 0 0 0 8px #F7F7F7, 0 0 8px rgba(0, 0, 0, 0.1); // -500px 0 2px 500px blue,
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-in-out;
+    position: relative;
+    z-index: 2;
+  }
+
+  &:active::-webkit-slider-thumb {
+    //background: #fff;
+    //box-shadow: -340px 0 0 320px #1597ff, inset 0 0 0 3px #1597ff;
+  }
+
+  // Firefox
+  &::-moz-range-progress {
+    background-color: #43e5f7;
+  }
+
+  &::-moz-range-track {
+    background-color: #9a905d;
+  }
+}
+
+.filledTrack {
+  position: absolute;
+  left: 33px;
+  top: 43px;
+  height: 2px;
+  background-color: $primary-text;
+}
+
+.currentValueLabel {
+  position: absolute;
+  top: 10px;
+  padding: 10px;
+  margin-top: -10px;
+  margin-left: -10px;
+  background-color: #fff;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: $primary-text;
+}
+
+.standardLabel {
+  position: absolute;
+  left: 50%;
+  bottom: 13px;
+  transform: translateX(-50%);
+  color: $primary-text;
+}
+
+.lowLabel {
+  position: absolute;
+  left: 30px;
+  bottom: 13px;
+}
+
+.lowValue {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+
+.highLabel {
+  position: absolute;
+  right: 34px;
+  bottom: 13px;
+}
+
+.highValue {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.leftEnd {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 32px;
+  top: 40px;
+  background: #F7F7F7;
+  border: 2px solid #313131;
+  border-radius: 50%;
+}
+
+.rightEnd {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background-color: #9D9D9D;
+  right: 32px;
+  top: 40px;
+  border-radius: 50%;
+}
